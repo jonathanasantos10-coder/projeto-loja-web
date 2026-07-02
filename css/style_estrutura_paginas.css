@@ -21,6 +21,10 @@
 #geral{
     margin: 20px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* cabecalho, header do site*/
 header{
@@ -88,6 +92,7 @@ header{
 
 /* formatando o section de pesuqisa pelo id*/
 #pesquisa{
+    background-color: #00A64F;
     width: 100%;
     height: 50px;
     display: flex;
