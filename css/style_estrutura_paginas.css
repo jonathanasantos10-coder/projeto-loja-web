@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* importando a fonte roboto*/
+
+
+/* seletor coringa que atribui caracteristicas a todos elementos*/ 
+*{ 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: roboto;
+} 
+
+/* criando uma variavel no css*/
+:root{
+    --cor_principal: #111111;
+    --cor_botao01: #3483FA;
+    --cor_lnk_menu: #00A64F;
+    --cor_vermelha: red;
+}
+
+/* tag main*/
+#geral{
+    margin: 20px;
+    padding: 20px;
+}
+/* cabecalho, header do site*/
+header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background-color: var(--cor_principal);
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+/* alterando as caracteristicas da imagem logo*/
+#logo img{
+    width: 250px;
+    height: 160px;
+}
+/* alterando a tag nav pelo id*/
+#menu{
+    width: 750px;
+    height: 160px;
+    display: flex;
+    align-items:center;
+    justify-content: center; 
+}
+/* para alterar elementos dentro do header utiliza o id da header e o elemento desejado*/
+#cabecalho ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+/*alterando as imagens de icones pela div e elemento img*/
+#div-icones img {
+    width: 70px;
+    height: 60px;
+}
+
+/* formatando os menus*/
+#menu a:link{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_lnk_menu)
+}
+
+#menu a:visited{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_lnk_menu)
+}
+
+#menu a:hover{
+    font-size: 1.6em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_botao01)
+}
+
+#menu a:active{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_vermelha)
+}
+
+/* formatando o section de pesuqisa pelo id*/
+#pesquisa{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pesquisa input{
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.3em;
+    }
