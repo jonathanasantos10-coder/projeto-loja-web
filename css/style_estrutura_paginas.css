@@ -118,16 +118,6 @@ header{
         
     }
 
-    .card{
-        width: 250px;
-        min-height: 250px;
-        border: solid 1px var(--cor_vermelha);
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
 
     .card:hover{
         transform-box: translateY(-5px);

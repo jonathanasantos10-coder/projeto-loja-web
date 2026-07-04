@@ -1,0 +1,127 @@
+@import url(style_estrutura_paginas.css);
+
+/* formatação da seção de carrinho*/
+#carrinho {
+    display: flex;
+    margin: 30px 0px;
+}
+
+/* formatação para os menu de itens no carrinho */
+.item {
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 1px;
+    border-bottom: 1px solid var(--cor_vermelha);
+}
+
+.img_item {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn_und {
+    width: 150px;
+}
+
+.img_btn_del {
+    width: 15px;
+}
+
+.promo {
+    text-align: center;
+    text-transform: lowercase;
+    background-color: green;
+    color: white;
+}
+
+/* formatação para a aba onde o usuário informa o cep, etc*/
+#checkout {
+    margin-left: 5%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: solid 1px var(--cor_vermelha);
+    align-items: center;
+    align-content: center;
+}
+
+#form {
+    margin: 5px 5px;
+    align-items: center;
+    display: flex;
+    border: 1px solid var(--cor_vermelha);
+    border-radius: 5px;
+}
+
+#valores {
+    margin: 5px 5px;
+    border: 1px solid var(--cor_vermelha);
+    border-radius: 5px;
+}
+
+
+
+#total {
+    margin: 5px 5px;
+     border: 1px solid var(--cor_vermelha);
+    border-radius: 5px;
+}
+
+#botoes_checkout{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+    gap: 30px
+}
+h1 {
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background-color: var(--cor_vermelha);
+    border-radius: 5px;
+    font-size: 1.1em;
+}  
+
+.btn_mais{
+    border-radius: 10px;
+    background-color: var(--cor_lnk_menu);
+    color: white;
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btn_checkout{
+    border-radius: 10px;
+    color: white;
+    background-color: var(--cor_vermelha);
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2{
+     margin: 5px 5px;
+    color: var(--cor_vermelha);
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+#form input
+{
+    
+    border-radius: 3px;
+    margin: 2px 2px;
+    border: 1px solid var(--cor_vermelha);
+    
+}

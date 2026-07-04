@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pentabyte store</title>
+    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style_carrinho.css">
+</head>
+
+<body>
+    <main id="geral">
+        <header id="cabecalho">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="../images/icons/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li> <a href="../index.html" class="lnk.menu"> Home </a> </li>
+                    <li><a href="cadastro.html" class="lnk.menu"> Cadastro </a></li>
+                    <li> <a href="sobre.html" class="lnk.menu"> Sobre </a></li>
+                </ul>
+            </nav>
+
+            <div id="div-icones">
+                <ul>
+                    <li> <a href="cadastro.html" class="lnk.icone"> <img src="../images/icons/login.png"
+                                alt="Login de usuario"> </a></li>
+                    <li> <a href="carrinho.html" class="lnk.icone"> <img src="../images/icons/carrinho.png"
+                                alt="Carrinho de compras"> </a></li>
+                </ul>
+            </div>
+        </header>
+        <section id="pesquisa">
+            <input type="text" name="pesquisa" id="pesquisa" placeholder="Encontre na Penta">
+        </section>
+
+
+        <section id="carrinho">
+
+            <section id="card_item">
+                <div class="item">
+                    <img src="../images/produtos/cpu-ryzen-7-9800-3d.png" alt="R7 9800X3D" class="img_item">
+
+                    <div class="info">
+                        <h2 class="title-card">CPU AMD AM4 RYZEN 7 9800X3D</h2>
+                        <h3 class="value-card">R$ 1.999,99</h3>
+                    </div>
+
+                    <button class="btn_und"> 1 Unidade </button>
+                    <button class="btn_del"> <img src="../images/icons/trash.png" class="img_btn_del"
+                            alt="remover do carrinho" title="remover do carrinho"> </button>
+                </div>
+
+                <div class="item">
+                    <img src="../images/produtos/gpu-rtx-5090-msi.jpg" alt="GPU RTX 5090 MSI" class="img_item">
+
+                    <div class="info">
+                        <h2 class="title-card">GPU RTX 5090 MSI GAMING TRIO</h2>
+                        <h3 class="value-card">R$ 24.999,99</h3>
+                        <h3 class="promo"> 31% OFF! </h3>
+                    </div>
+
+                    <button class="btn_und"> 1 Unidade </button>
+                    <button class="btn_del"> <img src="../images/icons/trash.png" class="img_btn_del"
+                            alt="remover do carrinho" title="remover do carrinho"> </button>
+                </div>
+            </section>
+
+            <section id="checkout">
+                <div id="form">
+                     <form id="form-cep">
+                        <h1>CEP</h1>
+                        <input type="text" maxlength="9" required placeholder="Digite o CEP" name="cep" id="cep" class="cep">
+                    </form>
+                </div>    
+
+                <div id="valores">
+                    <h1> VALOR TOTAL </h1>
+                    <h2> R$ 26.999,98 </h2>
+
+                    <h1> VALOR FRETE </h1>
+                    <h2> R$ 0,00 </h2>
+                </div>
+
+                <div id="total"> 
+                <h1> TOTAL A PAGAR </h1>
+                <h2> R$ 26.999,98 </h2>
+                </div>
+
+                <div id="botoes_checkout">
+                <button class="btn_mais"> Continuar Comprando </button>
+                <button class="btn_checkout"> Finalizar Compra </button>
+                </div>
+            </section>
+
+
+
+        </section>
+
+        <footer id="rodape">
+            <div id="dados-loja">
+                <h2> Rua Com Nome bem Family Friendly</h2>
+                <h1> Aracaju - Sergipe </h1>
+            </div>
+
+            <div id="icones_sociais">
+                <ul>
+                    <li> <a href="instagram.com/velkro_o"> <img src="../images/icons/instagram.png" alt=""> </a></li>
+                    <li><a href="x.com/__2345meia78"> <img src="../images/icons/x.png"> </a> </li>
+                </ul>
+            </div>
+
+            <div id="div-cartoes">
+                <img src="../images/icons/master_card.png" alt="mastercard">
+                <img src="../images/icons/hipercard.png" alt="hipercard">
+                <img src="../images/icons/visa.png" alt="visa">
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
