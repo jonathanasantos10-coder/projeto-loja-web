@@ -134,3 +134,7 @@ h4 {
     border-radius: 5px;
     font-size: 1.1em;
 }
+
+#dados-loja, h2, h1{
+    color: white;
+}
