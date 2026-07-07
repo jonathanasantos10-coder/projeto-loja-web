@@ -1,7 +1,7 @@
 import { produtos } from "./produtos.js";
 
 
-const section_card = document.querySelector(#cards)
+const section_card = document.querySelector('#cards')
 
 
 const listarProdutos = ()=>{
