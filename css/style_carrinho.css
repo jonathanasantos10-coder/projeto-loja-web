@@ -139,3 +139,11 @@ h4 {
     color: black;
     font-size: 1.3em;
 }
+
+.promo{
+    text-transform: uppercase;
+}
+
+.value-card-promo{
+text-decoration: line-through;
+}
