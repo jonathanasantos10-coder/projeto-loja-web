@@ -21,9 +21,9 @@
 
             <nav id="menu">
                 <ul>
-                    <li> <a href="index.html" class="lnk.menu"> Home </a> </li>
-                    <li><a href="pages/login.html" class="lnk.menu"> Entrar </a></li>
-                    <li> <a href="pages/sobre.html" class="lnk.menu"> Sobre </a></li>
+                    <li> <a href="index.html" class="lnk_menu"> Home </a> </li>
+                    <li><a href="pages/login.html" class="lnk_menu"> Entrar </a></li>
+                    <li> <a href="pages/sobre.html" class="lnk_menu"> Sobre </a></li>
                 </ul>
             </nav>
 
@@ -36,86 +36,22 @@
                 </ul>
             </div>
 
-             <section id="pesquisa">
-            <input type="text" name="pesquisa" id="pesquisa" placeholder="Encontre na Penta">
-        </section>
+            <section id="pesquisa">
+                <input type="text" name="pesquisa" id="pesquisa" placeholder="Encontre na Penta">
+            </section>
+
+            
 
         </header>
-       
 
-        <section id="cards">
-            <div class="card">
-                <img src="images/produtos/cpu-ryzen-7-9800-3d.png" alt="R7 9800X3D" class="img_card">
+        <nav id="menu-secoes">
+                <ul id="lista-secoes">
+                    <li><button id="btn-todos" class="ativo" data-secao="todos">Todos</button></li>
+                </ul>
+            </nav>
 
-                <h2 class="title_card"> CPU AMD Ryzen 7 9800X3D </h2>
-
-                <h3 class="valor_card">
-                    R$ 1999,99
-                </h3>
-
-                <button class="btn_card"> Adicionar ao carrinho </button>
-            </div>
-
-            <div class="card">
-                <img src="images/produtos/gpu-rtx-5090-msi.jpg" alt="GPU RTX 5090 MSI" class="img_card">
-
-                <h2 class="title_card"> GPU RTX 5090 MSI </h2>
-
-                <h3 class="valor_card">
-                    R$ 24.999,99
-                </h3>
-
-                <button class="btn_card"> Adicionar ao carrinho </button>
-            </div>
-
-            <div class="card">
-                <img src="images/produtos/headse-astro-a50.jpg" alt="Astro A50" class="img_card">
-
-                <h2 class="title_card"> Headset astro a50 </h2>
-
-                <h3 class="valor_card">
-                    R$ 999,99
-                </h3>
-
-                <button class="btn_card"> Adicionar ao carrinho </button>
-            </div>
-
-            <div class="card">
-                <img src="images/produtos/headset-hyperx-cloud-3.jpg" alt="Hyperx cloud 3" class="img_card">
-
-                <h2 class="title_card"> Headset HyperX Cloud 3 </h2>
-
-                <h3 class="valor_card">
-                    R$ 499,99
-                </h3>
-
-                <button class="btn_card"> Adicionar ao carrinho </button>
-            </div>
-
-            <div class="card">
-                <img src="images/produtos/hyperx-alloy-core.jpg" alt="Teclado HyperX alloy core" class="img_card">
-
-                <h2 class="title_card"> Teclado Mecânico HyperX Alloy Core </h2>
-
-                <h3 class="valor_card">
-                    R$ 699,99
-                </h3>
-
-                <button class="btn_card"> Adicionar ao carrinho </button>
-            </div>
-
-            <div class="card">
-                <img src="images/produtos/logitech-pro-superlight.jpg" alt="Mouse logitech-pro-superlight"
-                    class="img_card">
-
-                <h2 class="title_card"> Mouse logitech pro superlight </h2>
-
-                <h3 class="valor_card">
-                    R$ 799,99
-                </h3>
-
-                <button class="btn_card"> Adicionar ao carrinho </button>
-            </div>
+        <section id="produtos-container">
+            <!-- os cards de produto serão inseridos aqui pelo JS -->
         </section>
 
         <footer id="rodape">

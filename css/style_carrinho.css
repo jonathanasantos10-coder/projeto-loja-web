@@ -1,16 +1,17 @@
 @import url(style_estrutura_paginas.css);
 
-/* formatação da seção de carrinho*/
+
 #carrinho {
     display: flex;
     margin: 30px 0px;
 }
 
-/* formatação para os menu de itens no carrinho */
+
 .item {
     margin-top: 2px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     padding: 20px;
     border-radius: 1px;
@@ -39,7 +40,7 @@
     color: white;
 }
 
-/* formatação para a aba onde o usuário informa o cep, etc*/
+
 #checkout {
     margin-left: 5%;
     width: auto;
@@ -135,15 +136,34 @@ h4 {
     font-size: 1.1em;
 }
 
-#dados-loja{
+#dados-loja {
     color: black;
     font-size: 1.3em;
 }
 
-.promo{
-    text-transform: uppercase;
+.controles-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.value-card-promo{
-text-decoration: line-through;
+.btn-menos,
+.btn-mais-qtd {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--cor_vermelha);
+    background-color: transparent;
+    color: var(--cor_vermelha);
+    border-radius: 50%;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-menos:hover,
+.btn-mais-qtd:hover {
+    background-color: var(--cor_vermelha);
+    color: white;
 }
