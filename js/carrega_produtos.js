@@ -183,6 +183,7 @@ inputPesquisa.addEventListener("input", (evento) => {
 function iniciar() {
     montarMenuSecoes();
     renderizarProdutos(produtos);
+    aplicarFiltroDaURL();
 }
 
 iniciar();
@@ -202,3 +203,22 @@ function adicionarAoCarrinho(produto) {
     alert(`"${produto.descricao_produto}" adicionado ao carrinho!`);
 }
 
+function aplicarFiltroDaURL() {
+    const parametros = new URLSearchParams(window.location.search);
+
+    const secao = parametros.get("secao");
+
+    if (!secao) return;
+
+    // filtra os produtos
+    filtrarPorSecao(secao);
+
+    // destaca o botão correto
+    const botao = document.querySelector(
+        `#lista-secoes button[data-secao="${secao}"]`
+    );
+
+    if (botao) {
+        marcarBotaoAtivo(botao);
+    }
+}
