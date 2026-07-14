@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* importando a fonte roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* importando a fonte roboto*/
 
 
-/* seletor coringa que atribui caracteristicas a todos elementos*/ 
-*{ 
+/* seletor coringa que atribui caracteristicas a todos elementos*/
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: roboto;
-} 
+}
 
 /* criando uma variavel no css*/
-:root{
+:root {
     --cor_principal: #111111;
     --cor_botao01: #3483FA;
     --cor_lnk_menu: #00A64F;
@@ -18,7 +19,7 @@
 }
 
 /* tag main*/
-#geral{
+#geral {
     margin: 20px;
     padding: 20px;
     display: flex;
@@ -26,8 +27,9 @@
     justify-content: center;
     align-items: center;
 }
+
 /* cabecalho, header do site*/
-header{
+header {
     width: 105%;
     height: 150px;
     background-color: #111111;
@@ -37,25 +39,29 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
 /* alterando as caracteristicas da imagem logo*/
-#logo img{
+#logo img {
     width: 100px;
     height: 130px;
 }
+
 /* alterando a tag nav pelo id*/
-#menu{
+#menu {
     width: 750px;
     height: 160px;
     display: flex;
-    align-items:center;
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
 }
+
 /* para alterar elementos dentro do header utiliza o id da header e o elemento desejado*/
-#cabecalho ul{
+#cabecalho ul {
     display: flex;
     list-style: none;
     gap: 20px;
 }
+
 /*alterando as imagens de icones pela div e elemento img*/
 #div-icones img {
     width: 70px;
@@ -63,28 +69,28 @@ header{
 }
 
 /* formatando os menus*/
-#menu a:link{
+#menu a:link {
     font-size: 1.3em;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--cor_lnk_menu)
 }
 
-#menu a:visited{
+#menu a:visited {
     font-size: 1.3em;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--cor_lnk_menu)
 }
 
-#menu a:hover{
+#menu a:hover {
     font-size: 1.6em;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--cor_botao01)
 }
 
-#menu a:active{
+#menu a:active {
     font-size: 1.3em;
     text-transform: uppercase;
     text-decoration: none;
@@ -92,7 +98,7 @@ header{
 }
 
 /* formatando o section de pesuqisa pelo id*/
-#pesquisa{
+#pesquisa {
     width: 100%;
     height: 50px;
     display: flex;
@@ -100,83 +106,118 @@ header{
     justify-content: center;
 }
 
-#pesquisa input{
+#pesquisa input {
     padding: 20px;
     border-radius: 8px;
     font-size: 1.3em;
-    }
-/* formatação dos cards*/ 
+}
 
-    #cards{   
-        width: 1000px;
-        min-height: 600px;
-        margin: 20px 0px;
-        padding: 10px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        
-    }
+/* formatação dos cards*/
 
+#cards {
+    width: 1000px;
+    min-height: 600px;
+    margin: 20px 0px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 
-    .card:hover{
-        transform-box: translateY(-5px);
-    }
+}
 
 
-    .card h2{
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin: 10px 0px;
-    }
+.card:hover {
+    transform-box: translateY(-5px);
+}
 
-    .card h3{
-        margin: 20px 0px;   
-    }
 
-    .card button{
-        width: 100%;
-        height: 45px;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        border: none;
-        background-color: var(--cor_lnk_menu);
-        cursor: pointer;
-    }
+.card h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
 
-    .card img{
-        width: 100%;
-        height: 250px;
-    }
+.card h3 {
+    margin: 20px 0px;
+}
 
-    /* formatação do rodapé*/ 
+.card button {
+    width: 100%;
+    height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: none;
+    background-color: var(--cor_lnk_menu);
+    cursor: pointer;
+}
 
-    #rodape{
-        width: 105%;
-        margin-top: 50px;
-        height: 100%;
-        background-color: var(--cor_vermelha);
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }    
+.card img {
+    width: 100%;
+    height: 250px;
+}
 
-    #dadosloja{
-        font-size: 0.8em;
-    }
+/* formatação do rodapé*/
 
-    #icones_sociais ul {
-        list-style: none;
-    }
+#rodape {
+    width: 105%;
+    margin-top: 50px;
+    height: 100%;
+    background-color: var(--cor_vermelha);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
-    #icones_sociais img{
-        width: 25px;
-        height: 25px;
-        margin-left: 50px;
-    }
+#dadosloja {
+    font-size: 0.8em;
+}
 
-    #div-cartoes img{
-        width: 25px;
-        height: 25px;
-    }
+#icones_sociais ul {
+    list-style: none;
+}
 
+#icones_sociais img {
+    width: 25px;
+    height: 25px;
+    margin-left: 50px;
+}
+
+#div-cartoes img {
+    width: 25px;
+    height: 25px;
+}
+
+
+#menu-secoes {
+    margin: 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lista-secoes {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#lista-secoes button {
+    background-color: transparent;
+    border: 1px solid var(--cor_lnk_menu);
+    color: var(--cor_lnk_menu);
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.2s, color 0.2s;
+    width: max-content
+}
+
+#lista-secoes button:hover,
+#lista-secoes button.ativo {
+    background-color: var(--cor_lnk_menu);
+    color: #fff;
+}
