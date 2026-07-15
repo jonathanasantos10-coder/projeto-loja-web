@@ -187,37 +187,36 @@ header {
     height: 25px;
 }
 
-
-#menu-secoes {
-    margin: 10px 0px;
-    justify-content: space-between;
+#menu-secoes{
     align-items: center;
-}
-
-#lista-secoes {
-    display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     list-style: none;
+    width: max-content;
+    display: flex;
+    width: 100%;
+}
+
+#nav-secoes {
+    width: max-content;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
 }
 
-#lista-secoes button {
-    background-color: transparent;
-    border: 1px solid var(--cor_lnk_menu);
-    color: var(--cor_lnk_menu);
-    padding: 6px 14px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 0.95em;
+.lnk-secao:link, .lnk-secao:visited{
     text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: background-color 0.2s, color 0.2s;
-    width: max-content
+    text-decoration: none;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    color: var(--cor_vermelha);
 }
 
-#lista-secoes button:hover,
-#lista-secoes button.ativo {
-    background-color: var(--cor_lnk_menu);
-    color: #fff;
+.lnk-secao:hover {
+    font-size: 1.5em;
+    color: var(--cor_vermelha);
+}
+
+.lnk-secao:active {
+    color: var(--cor_principal);
 }

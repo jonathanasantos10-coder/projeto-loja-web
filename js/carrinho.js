@@ -1,3 +1,4 @@
+
 //CRIANDO O ARRAY DE ITENS DO CARRINHO
 const itensCarrinho = JSON.parse(localStorage.getItem('itensSessao')) || []
 
@@ -5,16 +6,21 @@ const itensCarrinho = JSON.parse(localStorage.getItem('itensSessao')) || []
 const addItem = (objItem) => {
     itensCarrinho.push(objItem)
 
-    localStorage.setItem('itensSessao', itensCarrinho)
+    localStorage.setItem('itensSessao', JSON.stringify(itensCarrinho))
 }
 
 //LISTAR ITENS DO CARRINHO
 const listItens = () => {
-    const itensSelecionados = JSON.stringify(localStorage.getItem('itensSessao'))
+
+    const itensSelecionados = JSON.parse(localStorage.getItem('itensSessao')) || []
 
     return itensSelecionados
 }
 
+const removeItem = (pos) => {
+    itensCarrinho.splice(pos,1)
 
+    localStorage.setItem('itensSessao', JSON.stringify(itensCarrinho))
+}
 
-export { addItem }
+export { addItem, listItens, removeItem}
