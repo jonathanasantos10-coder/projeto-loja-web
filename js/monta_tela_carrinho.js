@@ -1,4 +1,4 @@
-import { listItens, removeItem } from "./carrinho.js";
+import { listItens, removeItem, alteraQuantidade } from "./carrinho.js";
 
 //MONTANDO A TELA CARRINHO
 const montaTelaCarrinho = () => {
