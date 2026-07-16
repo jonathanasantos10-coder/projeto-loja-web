@@ -12,11 +12,12 @@ const montaTelaCarrinho = () => {
         sectionItem.setAttribute('class', 'item')
         sectionItem.innerHTML = `<img src='${elem.caminho_da_imagem}' alt=${elem.descricao_produto}/> 
         <p class='descricao'>${elem.descricao_produto}</p> 
-        <p class='vlr-unitario'>${elem.valor_unitario}</p> 
+        <p class='vlr-unitario'>${elem.valor_unitario.toFixed(2).replace('.', ',')}</p> 
         <p class='quantidade'> Quantidade:${elem.quantidade}</p>
         <button type='button' id='btn_mais' class='btn_mais'>+</button>
         <button type='button' id='btn_menos' class='btn_menos'>-</button>
-        <p class="tot-item">${elem.valor_unitario * elem.quantidade}</p>`
+        <p class="tot-item">${(elem.valor_unitario * elem.quantidade).toFixed(2).replace('.', ',')}</p>`
+
 
 
 
@@ -32,16 +33,18 @@ const montaTelaCarrinho = () => {
         // arrow fuction do botao de remover 
         const btn_Menos = sectionItem.querySelector('#btn_menos')
         btn_Menos.addEventListener('click', () => {
-            sectionItem.querySelector('.quantidade').innerHTML = `Quantidade:${elem.quantidade <= 1 ? 1 : --elem.quantidade}`
+            sectionItem.querySelector('.quantidade').innerHTML = `Quantidade:${elem.quantidade <= 1 ? 1 : --elem.quantidade}` // na parte "elem.quantidade <= 1 ? 1 :" é um if "ternorio", cortesia do amigo Eric Jean me ensinar isso.
             atualizaTotal()
         })
-        
+
         // pegando o elemento do dom dinamico criado no section item, desta vez o paragrafo de total
         const total = sectionItem.querySelector('.tot-item')
         // função que atualiza o total baseado na quantidade e valor unitario do item
         function atualizaTotal() {
-            total.innerHTML = elem.valor_unitario * elem.quantidade
+            total.innerHTML = (elem.valor_unitario * elem.quantidade).toFixed(2).replace('.', ',') // se eu não botar to fixed aqui também o código quebra e não mostra o vlaor formatado (???????) não sei o pq tem que colocar nos dois. sinceramente.
         }
+
+
 
         const imgRemover = document.createElement('img')
         imgRemover.setAttribute('class', 'img_del')
