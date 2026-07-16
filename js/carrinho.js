@@ -15,12 +15,16 @@ const fObjItem = (objProduto) => {
     return item
 }
 
-// alterando a quantidade do item no carrinho
-
-
+        
 //FUNÇÃO PARA ADCIONAR O ITEM NO ARRAY
 const addItem = (objItem) => {
-    itensCarrinho.push(fObjItem(objItem))
+
+    const index = itensCarrinho.findIndex(elem => elem.id_produto == objItem.id_produto)
+    if (index !== -1) {
+        itensCarrinho[index].quantidade += 1
+    }else {
+        itensCarrinho.push(fObjItem(objItem))
+    }
 
     localStorage.setItem('itensSessao', JSON.stringify(itensCarrinho))
 }
@@ -40,7 +44,6 @@ const removeItem = (pos) => {
 }
 
 
+console.log("índice do array -->", itensCarrinho.findIndex(elem => elem.id_produto == 1))
 
-
-
-export { addItem, listItens, removeItem, alteraQuantidade}
+export { addItem, listItens, removeItem } 
