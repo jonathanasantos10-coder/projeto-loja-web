@@ -1,222 +1,240 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* importando a fonte roboto*/
-
 
 /* seletor coringa que atribui caracteristicas a todos elementos*/
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: roboto;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+
+body {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
 }
 
 /* criando uma variavel no css*/
 :root {
-    --cor_principal: #111111;
-    --cor_botao01: #3483FA;
-    --cor_lnk_menu: #00A64F;
-    --cor_vermelha: #FF5510;
+  --cor_principal: #111111;
+  --cor_botao01: #3483fa;
+  --cor_lnk_menu: #00a64f;
+  --cor_vermelha: #ff5510;
 }
 
 /* tag main*/
 #geral {
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* cabecalho, header do site*/
 header {
-    width: 105%;
-    height: 150px;
-    background-color: #111111;
-    padding: 5px 100px;
-    margin: 20px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 105%;
+  height: 150px;
+  background-color: #111111;
+  padding: 5px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* alterando as caracteristicas da imagem logo*/
 #logo img {
-    width: 100px;
-    height: 130px;
+  width: 100px;
+  height: 130px;
 }
 
 /* alterando a tag nav pelo id*/
 #menu {
-    width: 750px;
-    height: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 750px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* para alterar elementos dentro do header utiliza o id da header e o elemento desejado*/
 #cabecalho ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
 /*alterando as imagens de icones pela div e elemento img*/
 #div-icones img {
-    width: 70px;
-    height: 60px;
+  width: 70px;
+  height: 60px;
 }
 
 /* formatando os menus*/
 #menu a:link {
-    font-size: 1.3em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--cor_lnk_menu)
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--cor_lnk_menu);
 }
 
 #menu a:visited {
-    font-size: 1.3em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--cor_lnk_menu)
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--cor_lnk_menu);
 }
 
 #menu a:hover {
-    font-size: 1.6em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--cor_botao01)
+  font-size: 1.6em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--cor_botao01);
 }
 
 #menu a:active {
-    font-size: 1.3em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--cor_vermelha)
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--cor_vermelha);
 }
 
 /* formatando o section de pesuqisa pelo id*/
 #pesquisa {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #pesquisa input {
-    padding: 20px;
-    border-radius: 8px;
-    font-size: 1.3em;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.3em;
 }
 
 /* formatação dos cards*/
 
 #cards {
-    width: 1000px;
-    min-height: 600px;
-    margin: 20px 0px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-
+  width: 1000px;
+  min-height: 600px;
+  margin: 20px 0px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
-
 
 .card:hover {
-    transform-box: translateY(-5px);
+  transform-box: translateY(-5px);
 }
 
-
 .card h2 {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 10px 0px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px 0px;
 }
 
 .card h3 {
-    margin: 20px 0px;
+  margin: 20px 0px;
 }
 
 .card button {
-    width: 100%;
-    height: 45px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    border: none;
-    background-color: var(--cor_lnk_menu);
-    cursor: pointer;
+  width: 100%;
+  height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border: none;
+  background-color: var(--cor_lnk_menu);
+  cursor: pointer;
 }
 
 .card img {
-    width: 100%;
-    height: 250px;
+  width: 100%;
+  height: 250px;
 }
 
 /* formatação do rodapé*/
 
 #rodape {
-    width: 105%;
-    margin-top: 50px;
-    height: 100%;
-    background-color: var(--cor_vermelha);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  width: 105%;
+  height: 100%;
+  background-color: var(--cor_vermelha);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #dadosloja {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 #icones_sociais ul {
-    list-style: none;
+  list-style: none;
 }
 
 #icones_sociais img {
-    width: 25px;
-    height: 25px;
-    margin-left: 50px;
+  width: 25px;
+  height: 25px;
+  margin-left: 50px;
 }
 
 #div-cartoes img {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
-#menu-secoes{
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    width: max-content;
-    display: flex;
-    width: 100%;
+#menu-secoes {
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#menu-secoes li {
+  border: 1px solid var(--cor_vermelhagi);
+  color: var(--cor_lnk_menu);
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.95em;
 }
 
 #nav-secoes {
-    width: max-content;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
-.lnk-secao:link, .lnk-secao:visited{
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1.3em;
-    letter-spacing: 3px;
-    color: var(--cor_vermelha);
+
+
+#lista-secoes button:hover,
+#lista-secoes button.ativo {
+  background-color: var(--cor_lnk_menu);
+  color: #fff;
+}
+
+.lnk-secao:link,
+.lnk-secao:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  color: var(--cor_vermelha);
 }
 
 .lnk-secao:hover {
-    font-size: 1.5em;
-    color: var(--cor_vermelha);
+  font-size: 1.5em;
+  color: var(--cor_vermelha);
 }
 
 .lnk-secao:active {
-    color: var(--cor_principal);
+  color: var(--cor_principal);
 }
