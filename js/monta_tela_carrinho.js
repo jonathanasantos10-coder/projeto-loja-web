@@ -43,8 +43,11 @@ const montaTelaCarrinho = () => {
         function atualizaTotal() {
             total.innerHTML = (elem.valor_unitario * elem.quantidade).toFixed(2).replace('.', ',') // se eu não botar to fixed aqui também o código quebra e não mostra o vlaor formatado (???????) não sei o pq tem que colocar nos dois. sinceramente.
         }
-
-
+        // calculando o total de todos os itens no carrinho 
+        function totalItens() {
+            const totalCarrinho = listItens().reduce((acc, elem) => acc + (elem.valor_unitario * elem.quantidade), 0)
+            return totalCarrinho
+        }
 
         const imgRemover = document.createElement('img')
         imgRemover.setAttribute('class', 'img_del')
@@ -66,8 +69,23 @@ const montaTelaCarrinho = () => {
 
 // pra fazer o código do checkout é só montar uma section dinamica igual o professor fez com o section item. (amanhã dia 17) justificativa: tomei dramin antes do intervalo pois estava passando mal e tô com sono e dor de cabeça, não consigo pensar direito e nem focar.
 
+const montaTelaCheckout = () => {
+    //PEGANDO ELEMENTOS DO DOM
+    const sectionCheckout = document.querySelector('#checkout')
+
+    sectionCheckout.innerHTML = ''
+
+    listItens().forEach((elem, i) => {
+        const sectionItem = document.createElement('div')
+        sectionItem.setAttribute('class', 'valores')
+        sectionItem.innerHTML = `<h1> VALOR TOTAL </h1> <h2> </h2>`
 
 
+
+
+        sectionCheckout.appendChild(sectionItem)
+        totalCarrinho()
+    })}
 
 const removerItemCarrinho = (pos) => {
     removeItem(pos)
