@@ -64,6 +64,7 @@ const montaTelaCarrinho = () => {
 }
 
 
+// pra fazer o código do checkout é só montar uma section dinamica igual o professor fez com o section item. (amanhã dia 17) justificativa: tomei dramin antes do intervalo pois estava passando mal e tô com sono e dor de cabeça, não consigo pensar direito e nem focar.
 
 
 
