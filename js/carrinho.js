@@ -20,8 +20,9 @@ const fObjItem = (objProduto) => {
 const addItem = (objItem) => {
 
     const index = itensCarrinho.findIndex(elem => elem.id_produto == objItem.id_produto)
-    if (index !== -1) {
-        itensCarrinho[index].quantidade += 1
+    if (index !== -1) { // verifica se no index possui um item com o mesmo id de produto, se tiver, adiciona mais na qntd
+      itensCarrinho[index].quantidade += 1
+      // atualizaQuantidade()
     }else {
         itensCarrinho.push(fObjItem(objItem))
     }
@@ -29,6 +30,10 @@ const addItem = (objItem) => {
     localStorage.setItem('itensSessao', JSON.stringify(itensCarrinho))
 }
 
+const atualizaQuantidade = (pos, novaQuantidade) => {
+    itensCarrinho[pos].quantidade = novaQuantidade;
+    localStorage.setItem('itensSessao', JSON.stringify(itensCarrinho));
+}
 //LISTAR ITENS DO CARRINHO
 const listItens = () => {
 
@@ -46,4 +51,4 @@ const removeItem = (pos) => {
 
 console.log("índice do array -->", itensCarrinho.findIndex(elem => elem.id_produto == 1))
 
-export { addItem, listItens, removeItem } 
+export { addItem, listItens, removeItem, atualizaQuantidade}
